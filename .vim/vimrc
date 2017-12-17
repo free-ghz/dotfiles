@@ -1,0 +1,99 @@
+" musho dec 2017. lets do this
+" followed guides by Doug Black and a Marchgg
+" looked at a bunch of other peoples configs as well
+
+" TO BEGIN
+" there is a line at the very bottom and we need to tell vim that it's there?
+set modelines=1
+
+" leader key, it seems § is unused
+let mapleader="§"
+
+" utf-8 always always always
+set encoding=utf-8
+
+" run pathogen to add plugins
+execute pathogen#infect()
+
+" -convenience variable- to add the powerline symbols into a neat varialbe
+let g:airline_powerline_fonts = 1
+let g:airline_theme='musho'
+
+
+" Section Colours {{{
+
+" decide colors per filetype
+filetype on
+
+" syntax colouring on
+syntax on
+
+" monokai color scheme
+" colorscheme molokai
+
+" line numbers
+set number
+set relativenumber
+
+" spaces allowed for line numbers
+set numberwidth=4
+
+" horizontal line where the cursor is
+set cursorline
+
+" show matching () characters (seems to be default?)
+set showmatch
+
+" }}}
+
+
+
+" Section Formatting {{{
+
+" no wrapping
+set nowrap
+
+" number of spaces on screen per tab character
+set tabstop=4
+
+" convert tabs to spaces (when editing)
+set expandtab
+
+" how many spaces used for auto indents
+set shiftwidth=4
+
+" i dont actually know what these mean :(
+set expandtab
+set smartindent
+set autoindent
+
+" make it so that theres always a few lines at the bottonm of the screen - scrolloff = SCROLL OFFset
+set scrolloff=15
+
+
+" }}}
+
+
+
+" Section Search {{{
+
+    " search as you type
+    set incsearch
+    
+    "   highlight searches
+    set hlsearch
+
+" }}}
+
+
+
+" Section Keymaps {{{
+    map <leader>rr :source ~/.vimrc
+" }}}
+
+
+
+" this is a -modeline-, which is basically that you can set some vim-behaviour
+" for a specific file? idk. this one is for folding.
+" here it comes:
+" vim:foldmethod=marker:foldlevel=0

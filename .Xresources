@@ -1,0 +1,60 @@
+! Musho was here
+! To APPLY this file: $ xrdb ~/.Xresources
+
+! sätter utf-8
+XTerm*locale: true
+
+! gör så att selection hamnar i clip
+XTerm*selectToClipboard: true
+
+!font och annat
+xterm*font: 7x13
+!UXTerm*faceName: -*-tamzenforpowerline-medium-*-*-*-16-*-*-*-*-*-*-*
+UXTerm*faceSize: 9
+
+!URXVT config
+URxvt.font: -*-tamzenforpowerline-medium-*-*-*-15-*-*-*-*-*-*-*
+URxvt*scrollBar: false
+
+
+
+! colour theme from the internet!!!!!!!!
+! www.terminal.sexy lol
+
+
+! special
+*.foreground:   #746c48
+*.background:   #170f0d
+*.cursorColor:  #746c48
+
+! black
+*.color0:       #392925
+*.color8:       #544b2e
+
+! red
+*.color1:       #98724c
+*.color9:       #af652f
+
+! green
+*.color2:       #908f32
+*.color10:      #c3c13d
+
+! yellow
+*.color3:       #aa964c
+*.color11:      #c8b55b
+
+! blue
+*.color4:       #7b854e
+*.color12:      #70a16c
+
+! magenta
+*.color5:       #6b5644
+*.color13:      #98724c
+
+! cyan
+*.color6:       #5c5142
+*.color14:      #778725
+
+! white
+*.color7:       #c8b55b
+*.color15:      #e4dc8c
