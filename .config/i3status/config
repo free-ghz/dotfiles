@@ -6,13 +6,17 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
+# color_good = "#3ac695"
+# color_degraded ="#b0a064"
+# color_bad ="#dd6667"
+
 general {
         colors = true
         interval = 5
 
-        color_good = "#3ac695"
-        color_degraded ="#b0a064"
-        color_bad ="#dd6667"
+        color_good = "#000000"
+        color_degraded ="#3e6395"
+        color_bad ="#000000"
 }
 
 order += "disk /"
@@ -24,7 +28,7 @@ order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
-        format_up = "WIFI %quality at %essid"
+        format_up = "%quality SWAG at %essid"
         format_down = "no wifi"
 }
 
@@ -54,7 +58,7 @@ disk "/" {
 
 volume master {
     format = "%volume JAZZ"
-    format_muted = "MUTE"
+    format_muted = "NO JAZZ"
     device = "default"
     mixer = "Master"
     mixer_idx = 0

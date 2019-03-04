@@ -17,44 +17,46 @@ URxvt.font: -*-tamzenforpowerline-medium-*-*-*-15-*-*-*-*-*-*-*
 URxvt*scrollBar: false
 
 
-
-! colour theme from the internet!!!!!!!!
-! www.terminal.sexy lol
-
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
 
 ! special
-*.foreground:   #746c48
-*.background:   #170f0d
-*.cursorColor:  #746c48
+*.foreground:   #e8e9eb
+*.background:   #114488
+*.cursorColor:  #e8e9eb
 
 ! black
-*.color0:       #392925
-*.color8:       #544b2e
+*.color0:       #000000
+*.color8:       #003377
 
 ! red
-*.color1:       #98724c
-*.color9:       #af652f
+*.color1:       #001e47
+*.color9:       #95c8fc
 
 ! green
-*.color2:       #908f32
-*.color10:      #c3c13d
+*.color2:       #001e47
+*.color10:      #95c8fc
 
 ! yellow
-*.color3:       #aa964c
-*.color11:      #c8b55b
+*.color3:       #001e47
+*.color11:      #95c8fc
 
 ! blue
-*.color4:       #7b854e
-*.color12:      #70a16c
+*.color4:       #3e6395
+*.color12:      #95c8fc
 
 ! magenta
-*.color5:       #6b5644
-*.color13:      #98724c
+*.color5:       #001e47
+*.color13:      #2892ff
 
 ! cyan
-*.color6:       #5c5142
-*.color14:      #778725
+*.color6:       #001e47
+*.color14:      #2892ff
 
 ! white
-*.color7:       #c8b55b
-*.color15:      #e4dc8c
+*.color7:       #00132d
+*.color15:      #2892ff
