@@ -50,8 +50,8 @@ set showmatch
 
 " Section Formatting {{{
 
-" no wrapping
-set nowrap
+" no wrapping YES WRAPPING
+set wrap
 
 " number of spaces on screen per tab character
 set tabstop=4
