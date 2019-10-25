@@ -20,6 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " add other plugins like this: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 Plugin 'easymotion/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
 
 " ie 'github-user/project'
 
@@ -53,8 +54,7 @@ let mapleader="§"
 set encoding=utf-8
 
 " -convenience variable- to add the powerline symbols into a neat varialbe
-let g:airline_powerline_fonts = 1
-let g:airline_theme='musho'
+" let g:airline_powerline_fonts = 1
 
 
 " Section Colours {{{
@@ -125,7 +125,7 @@ set scrolloff=15
 
 
 " Section Keymaps {{{
-    map <leader>rr :source ~/.vimrc
+    map <leader>rr :source ~/.vim/vimrc
 " }}}
 
 
