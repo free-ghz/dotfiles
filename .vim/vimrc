@@ -1,6 +1,46 @@
-" musho dec 2017. lets do this
+set nocompatible
+
+" musho oct 2019. lets do this
 " followed guides by Doug Black and a Marchgg
 " looked at a bunch of other peoples configs as well
+
+" to put vundle in the sacamophagus, i need to paste some lines here:
+
+"
+" ***************************** BEGIN VUNDLE
+"
+
+filetype off
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" add other plugins like this: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Plugin 'easymotion/vim-easymotion'
+
+" ie 'github-user/project'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"
+" ***************************** END VUNDLE
+"
 
 " TO BEGIN
 " there is a line at the very bottom and we need to tell vim that it's there?
@@ -11,9 +51,6 @@ let mapleader="§"
 
 " utf-8 always always always
 set encoding=utf-8
-
-" run pathogen to add plugins
-execute pathogen#infect()
 
 " -convenience variable- to add the powerline symbols into a neat varialbe
 let g:airline_powerline_fonts = 1
