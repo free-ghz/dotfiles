@@ -35,7 +35,9 @@ hi def link dreamCommand    Comment
 hi def link dreamNumber     Type
 hi def link dreamLink       Statement
 
-
+" highlight col 41
+set colorcolumn=41
+highlight ColorColumn ctermbg=16
 
 " THATS IT, FOLKS
 " dec 2017

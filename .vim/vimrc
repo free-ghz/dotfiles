@@ -66,7 +66,7 @@ filetype on
 syntax on
 
 " monokai color scheme
-" colorscheme molokai
+"  colorscheme molokai
 
 " line numbers
 set number
