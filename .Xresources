@@ -23,40 +23,39 @@ URxvt*scrollBar: false
 ! ------------------------------------------------------------------------------
 ! --- http://ciembor.github.com/4bit -------------------------------------------
 ! ------------------------------------------------------------------------------
-
 ! special
-*.foreground:   #e8e9eb
-*.background:   #114488
-*.cursorColor:  #e8e9eb
+*.foreground:   #ffffff
+*.background:   #111111
+*.cursorColor:  #ffffff
 
 ! black
-*.color0:       #000000
-*.color8:       #003377
+*.color0:       #131313
+*.color8:       #d1d1d1
 
 ! red
-*.color1:       #001e47
-*.color9:       #95c8fc
+*.color1:       #2d2d2d
+*.color9:       #d2c3ad
 
 ! green
-*.color2:       #001e47
-*.color10:      #95c8fc
+*.color2:       #4c3a3d
+*.color10:      #df9767
 
 ! yellow
-*.color3:       #001e47
-*.color11:      #95c8fc
+*.color3:       #4e4e4e
+*.color11:      #e1e1e1
 
 ! blue
-*.color4:       #3e6395
-*.color12:      #95c8fc
+*.color4:       #6f6f6f
+*.color12:      #ededed
 
 ! magenta
-*.color5:       #001e47
-*.color13:      #2892ff
+*.color5:       #909090
+*.color13:      #ed4b19
 
 ! cyan
-*.color6:       #001e47
-*.color14:      #2892ff
+*.color6:       #aaa998
+*.color14:      #f2361e
 
 ! white
-*.color7:       #00132d
-*.color15:      #2892ff
+*.color7:       #b1b1b1
+*.color15:      #fa390f
