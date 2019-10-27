@@ -14,22 +14,22 @@ exec_always xset fp rehash
 #######################################################################
 
 # vanliga texten i i3bar
-set $mcfg #e8e9eb
+set $mcfg #b1b1b1
 
 # background
-set $mcbg #114488
+set $mcbg #111111
 
 # rutorna med siffror
-set $mcgreen #e8e9eb
+set $mcgreen #df9767
 
 # linje runt aktivt window
-set $mcdgrn #99ccff
+set $mcdgrn #ffffff
 
 # linje runt inaktivt window
-set $mcdsenap #003377
+set $mcdsenap #f2361e
 
 # thinkpad button stuff
-set $mcorang #2892ff
+set $mcorang #df9767
 
 ###########################################################################
 
@@ -217,13 +217,14 @@ bar {
 set $tv 0x1008ff41
 
 #bindsym $tv exec uxterm
-set $launchy [f]irefox [s]ublime [e]clipse [t]hunar - screenshot w space
+set $launchy [f]irefox [s]ublime [e]clipse [t]hunar [x] screen off, screenshot w space
 bindsym $tv mode "$launchy"
 mode "$launchy" {
         bindsym f exec firefox
         bindsym s exec /opt/sublime_text/sublime_text
         bindsym e exec ~/cubes/eclipse/java-oxygen/eclipse/eclipse
         bindsym t exec thunar
+        bindsym x exec xset dpms force off
 
         #screenshot
         bindsym space exec scrot '%Y%m%d_%Ho%M%S.png' -e 'mv $f ~/Pictures/ '
@@ -260,6 +261,10 @@ bindsym XF86AudioLowerVolume    exec $psst pactl set-sink-volume @DEFAULT_SINK@ 
 bindsym XF86AudioRaiseVolume    exec $psst pactl set-sink-volume @DEFAULT_SINK@ +5% && pactl set-sink-mute @DEFAULT_SINK@ 0 $update
 bindsym XF86AudioMute           exec $psst pactl set-sink-mute @DEFAULT_SINK@ toggle $update
 
+# släck skärm å de
+bindsym $mod+XF86Back exec xset dpms force off
+bindsym $mod+XF86Forward exec systemctl suspend
+
 
 # startup!!!
 exec_always nm-applet
@@ -270,6 +275,7 @@ exec_always "dropbox start -i"
 # --bg-scale --bg-fill (den jag gillar) --bg-tile
 #exec_always --no-startup-id xsetroot -solid "$mcbg"
 #exec_always --no-startup-id feh --bg-fill /home/musho/Nextcloud/tapet/tumblr_nqbhuykkDO1tmuuj8o1_1280.png
-exec_always --no-startup-id feh --bg-fill /home/musho/Pictures/wallD.png
+#exec_always --no-startup-id feh --bg-fill /home/musho/Pictures/wallD.png
+exec_always --no-startup-id feh --bg-fill /home/musho/Nextcloud/tapet/1567447257642.jpg
 # shell colours
 exec_always xrdb ~/.Xresources
