@@ -1,4 +1,4 @@
 # global across computers
-if [ -f ~/.bash.global ]; then
-    . ~/.bash.global
+if [ -f ~/.bashrc.global ]; then
+    . ~/.bashrc.global
 fi

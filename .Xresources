@@ -1,6 +1,8 @@
 ! Musho was here
 ! To APPLY this file: $ xrdb ~/.Xresources
 
+URxvt.internalBorder: 24
+
 ! sätter utf-8
 XTerm*locale: true
 

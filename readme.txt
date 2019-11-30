@@ -11,3 +11,12 @@ thats
            get
               two
                  bashrc
+
+
+stuff to install
+================
+rxvt-unicode
+j4-dmenu-desktop
+feh
+vundle needs to be reinstalled everytime because idk howto submodules
+
