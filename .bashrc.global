@@ -33,11 +33,17 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
+# git for ps1
+source ~/git/dotfiles/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
 # ps1
-PS1="\n\e[97m\u@\h [\e[92m\w\e[97m]\n\\$ \[$(tput sgr0)\]"
+PS1='\n\e[97m\u@\h [\e[92m\w\e[97m]$(__git_ps1 " (%s)")\n\\$ \[$(tput sgr0)\]'
 
 # aliases
 alias ll='ls -alFG'
 alias lm='ls -aFG'
 alias cd..='cd ..'
+
+# editor
+export VISUAL=vim
+export EDITOR="$VISUAL"

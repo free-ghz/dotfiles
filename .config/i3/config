@@ -238,9 +238,9 @@ mode "$launchy" {
 # visual
 
 # 2px borders, no titlebar. get titlebar with pixel -> normal
-new_window pixel 1
+new_window pixel 9
 # hide borders against screen edges on fulscreen. always -> both, never -> none
-hide_edge_borders none
+hide_edge_borders both
 
 
 # child_border -> border runt fönstret
@@ -268,7 +268,7 @@ bindsym $mod+XF86Forward exec systemctl suspend
 
 # startup!!!
 exec_always nm-applet
-exec_always /usr/bin/nextcloud
+exec_always /home/kesha/bin/Nextcloud.AppImage
 exec_always "dropbox start -i"
 
 # wallpaper
@@ -276,6 +276,6 @@ exec_always "dropbox start -i"
 #exec_always --no-startup-id xsetroot -solid "$mcbg"
 #exec_always --no-startup-id feh --bg-fill /home/musho/Nextcloud/tapet/tumblr_nqbhuykkDO1tmuuj8o1_1280.png
 #exec_always --no-startup-id feh --bg-fill /home/musho/Pictures/wallD.png
-exec_always --no-startup-id feh --bg-fill /home/musho/Nextcloud/tapet/1567447257642.jpg
+exec_always --no-startup-id feh --bg-fill /home/kesha/Downloads/papes/o1545200.png
 # shell colours
 exec_always xrdb ~/.Xresources
