@@ -34,7 +34,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # git for ps1
-source ~/git/dotfiles/.git-prompt.sh
+source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 # ps1
 PS1='\n\e[97m\u@\h [\e[92m\w\e[97m]$(__git_ps1 " (%s)")\n\\$ \[$(tput sgr0)\]'
