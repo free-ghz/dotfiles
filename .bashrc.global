@@ -39,5 +39,5 @@ PS1="\n\e[97m\u@\h [\e[92m\w\e[97m]\n\\$ \[$(tput sgr0)\]"
 
 # aliases
 alias ll='ls -alFG'
-alias lm='ls -alFG'
+alias lm='ls -aFG'
 alias cd..='cd ..'
