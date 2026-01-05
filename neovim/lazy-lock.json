@@ -1,0 +1,9 @@
+{
+  "angr": { "branch": "master", "commit": "fb5dc3f5b9a3dfd5db0ce1b6250d6e9a9a3e701c" },
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "nvim-treesitter": { "branch": "main", "commit": "b033ab331ca0bccbd93c3c2b4f886fdfc09abec0" },
+  "plenary.nvim": { "branch": "master", "commit": "b9fd5226c2f76c951fc8ed5923d85e4de065e509" },
+  "telescope.nvim": { "branch": "master", "commit": "3333a52ff548ba0a68af6d8da1e54f9cd96e9179" },
+  "vim-bruin": { "branch": "master", "commit": "a0dcfa27f5158905f5ccedad3c785817cc590f9c" },
+  "vim-easymotion": { "branch": "master", "commit": "b3cfab2a6302b3b39f53d9fd2cd997e1127d7878" }
+}
