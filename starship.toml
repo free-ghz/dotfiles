@@ -1,0 +1,138 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+format = """
+$line_break\
+[ ](fg:black bg:black)\
+$hostname\
+$os\
+$username\
+[](fg:black bg:bg)\
+$directory\
+[](fg:black bg:bg)\
+$git_branch\
+$git_status\
+[](fg:black bg:blue)\
+$c$cpp$rust$golang$nodejs$python$java$kotlin$haskell$lua\
+[](fg:blue bg:black)\
+$docker_context$conda$pixi\
+[](fg:black bg:bg)\
+$time\
+$line_break
+$character
+"""
+
+[os]
+disabled = false
+format = "[\\($symbol\\) ]($style)"
+style = "fg:white bg:black"
+
+[os.symbols]
+Linux = "lnx"
+Macos = "mac"
+Windows = "win"
+
+[hostname]
+ssh_only = false
+ssh_symbol = "SSH "
+format = "[ $ssh_symbol$hostname ]($style)"
+style = "fg:white bg:black"
+
+[username]
+show_always = true
+style_user = "fg:bright-white bg:black"
+style_root = "fg:bright-red bg:black"
+format = "[ $user ]($style)"
+
+[directory]
+style = "fg:fg bg:bg"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = ".../"
+
+[git_branch]
+symbol = "git "
+style = "fg:cyan bg:black"
+format = "[ $symbol$branch ]($style)"
+
+[git_status]
+style = "fg:cyan bg:black"
+format = "[ $all_status$ahead_behind ]($style)"
+
+[c]
+symbol = "C "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[cpp]
+symbol = "C++ "
+style = "/g:white bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[rust]
+symbol = "rs "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[golang]
+symbol = "go "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[nodejs]
+symbol = "node "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[python]
+symbol = "py "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[java]
+symbol = "java "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[kotlin]
+symbol = "kt "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[haskell]
+symbol = "hs "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[lua]
+symbol = "lua "
+style = "fg:black bg:blue"
+format = "[ $symbol$version ]($style)"
+
+[docker_context]
+symbol = "docker "
+style = "fg:white bg:bright-black"
+format = "[ $symbol$context ]($style)"
+
+[conda]
+symbol = "conda "
+style = "fg:white bg:bright-black"
+format = "[ $symbol$environment ]($style)"
+
+[pixi]
+symbol = "pixi "
+style = "fg:white bg:bright-black"
+format = "[ $symbol$environment ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "fg:blue bg:bg"
+format = "[ $time ]($style)"
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
+vimcmd_visual_symbol = "[<](bold yellow)"
+vimcmd_replace_symbol = "[<](bold magenta)"
+
