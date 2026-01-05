@@ -14,7 +14,7 @@ config.initial_rows = 28
 config.font_size = 16
 config.font = wezterm.font_with_fallback { 'TamzenForPowerline' }
 
-config.color_scheme = 'Borland'
+config.color_scheme = 'Birds Of Paradise (Gogh)'
 
 -- (from https://wezterm.org/colorschemes/index.html)
 -- Built-in color schemes i like:
@@ -30,13 +30,33 @@ config.color_scheme = 'Borland'
 --          `Belafonte Day` a little shadier with nice vibrant colors
 --          `Yousai (terminal.sexy)` warm colors. eggshell bg
 
+-- make the tab bar look terminally as well...
+config.use_fancy_tab_bar = false
+
 
 
 -- on mac which is often, i want my left alt back so i can type $[] etc with my swedish layout
 config.send_composed_key_when_left_alt_is_pressed = true
+config.send_composed_key_when_right_alt_is_pressed = false
 
---
-config.use_fancy_tab_bar = false
+-- give back opt+left/right to move whole words
+local act = wezterm.action
+
+config.keys = {
+  {
+    key = 'LeftArrow',
+    mods = 'OPT',
+    action = act.SendKey {
+      key = 'b',
+      mods = 'ALT',
+    },
+  },
+  {
+    key = 'RightArrow',
+    mods = 'OPT',
+    action = act.SendKey { key = 'f', mods = 'ALT' },
+  },
+}
 
 
 
