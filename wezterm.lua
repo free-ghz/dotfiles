@@ -7,12 +7,20 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices.
 
 -- For example, changing the initial geometry for new windows:
-config.initial_cols = 80
-config.initial_rows = 28
+config.initial_cols = 120
+config.initial_rows = 38
 
 -- or, changing the font size and color scheme.
 config.font_size = 16
+config.font_dirs = { 'dotfiles' }
 config.font = wezterm.font_with_fallback { 'TamzenForPowerline' }
+
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+  config.freetype_load_target = 'Light'
+  config.freetype_render_target = 'HorizontalLcd'
+  config.font_size = 14
+end
+
 
 config.color_scheme = 'Birds Of Paradise (Gogh)'
 
@@ -32,6 +40,8 @@ config.color_scheme = 'Birds Of Paradise (Gogh)'
 
 -- make the tab bar look terminally as well...
 config.use_fancy_tab_bar = false
+
+config.enable_scroll_bar = true
 
 
 
