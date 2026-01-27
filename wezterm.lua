@@ -22,7 +22,7 @@ if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 end
 
 
-config.color_scheme = 'Birds Of Paradise (Gogh)'
+config.color_scheme = 'Borland'
 
 -- (from https://wezterm.org/colorschemes/index.html)
 -- Built-in color schemes i like:
@@ -37,6 +37,13 @@ config.color_scheme = 'Birds Of Paradise (Gogh)'
 --          `zenwritten_light`
 --          `Belafonte Day` a little shadier with nice vibrant colors
 --          `Yousai (terminal.sexy)` warm colors. eggshell bg
+
+config.force_reverse_video_cursor = false
+config.colors = {
+    cursor_bg = "#ffff00",
+    cursor_fg = "#000000",
+    cursor_border = "#00ff00"
+}
 
 -- make the tab bar look terminally as well...
 config.use_fancy_tab_bar = false
