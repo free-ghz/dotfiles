@@ -1,6 +1,7 @@
 local opt = vim.opt
 
 -- Core UX
+-- Use terminal's default color palette (disable 24-bit RGB colorscheme colors) by setting this to false. It will force color schemes to map onto the closest avaliable terminal color.
 opt.termguicolors = true
 opt.hidden = true
 opt.updatetime = 200

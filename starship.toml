@@ -1,23 +1,17 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
 format = """
-$line_break\
-[ ](fg:black bg:black)\
-$hostname\
-$os\
+[\n]()\
 $username\
-[](fg:black bg:bg)\
-$directory\
-[](fg:black bg:bg)\
+$hostname\
 $git_branch\
 $git_status\
-[](fg:black bg:blue)\
-$c$cpp$rust$golang$nodejs$python$java$kotlin$haskell$lua\
-[](fg:blue bg:black)\
+$nodejs$python$java\
 $docker_context$conda$pixi\
-[](fg:black bg:bg)\
 $time\
-$line_break
+[\n]()\
+$directory\
+[\n]()\
 $character
 """
 
@@ -26,36 +20,35 @@ disabled = false
 format = "[\\($symbol\\) ]($style)"
 style = "fg:white bg:black"
 
-[os.symbols]
-Linux = "lnx"
-Macos = "mac"
-Windows = "win"
-
 [hostname]
 ssh_only = false
 ssh_symbol = "SSH "
-format = "[ $ssh_symbol$hostname ]($style)"
+format = "[$ssh_symbol@$hostname ]($style)"
 style = "fg:white bg:black"
 
 [username]
 show_always = true
 style_user = "fg:bright-white bg:black"
 style_root = "fg:bright-red bg:black"
-format = "[ $user ]($style)"
+format = "[$user]($style)"
 
 [directory]
-style = "fg:fg bg:bg"
+style = "fg:cyan"
 format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = ".../"
+truncation_length = 0
+before_repo_root_style = "fg:cyan"
+repo_root_style = "fg:white"
+use_logical_path = true
+truncate_to_repo = false
+
 
 [git_branch]
 symbol = "git "
-style = "fg:cyan bg:black"
+style = "fg:cyan "
 format = "[ $symbol$branch ]($style)"
 
 [git_status]
-style = "fg:cyan bg:black"
+style = "fg:cyan"
 format = "[ $all_status$ahead_behind ]($style)"
 
 [c]

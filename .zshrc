@@ -5,8 +5,14 @@
 export EDITOR="nvim"
 
 alias cd..="cd .."
-alias ll="ls -alFGh"
-
+alias ls="ls --color -F"
+alias ll="ls -alh"
+# -a:
+# -l: "long format" more details columns
+# -F: lägg / efter directory, etc
+# -G: color _auto_ ... vi lägger istället --color alias som är: force
+# -h: humanly readable filesiz ie kilo mega giga
+# -t: sort by time midofied desc
 
 
 # load zsh competure feature
